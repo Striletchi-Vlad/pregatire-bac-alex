@@ -1,11 +1,10 @@
 ### Pt data viitoare
-- faci probleme cu recursivitate si notezi daca ramane ceva neclar
-- rezolvam problemele neclare si continuam cu pseudocod si siruri de caractere
+- faci probleme cu siruri de caractere & le discutam
 
 ### De facut (total)
 
 S1:
-  + recursivitate(un pic)
+  DONE + recursivitate(un pic)
 
 S2:
   + pseudocod (un pic)
@@ -25,4 +24,7 @@ S3:
   aux = f(1)
   f(aux, 2)
 
-2.
+2. Poti salva intr-o variabila diferenta intre 'a' si 'A' (ca si caractere, nu stringuri)
+  si sa o scazi dintr-o minuscula sa o transformi in majuscula,
+  sau sa o aduni la o majuscula sa o transformi in minuscula.
+  Merge cu orice caracter, nu doar cu 'a' si 'A'.

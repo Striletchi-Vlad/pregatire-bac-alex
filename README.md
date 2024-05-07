@@ -7,8 +7,8 @@ S1:
   DONE + recursivitate(un pic)
 
 S2:
-  + pseudocod (un pic)
-  + siruri de caractere (deloc) 
+  DONE + pseudocod (un pic)
+  DONE + siruri de caractere (deloc) 
     * pointeri
 
 S3:

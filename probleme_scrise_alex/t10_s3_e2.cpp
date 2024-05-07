@@ -1,4 +1,3 @@
-
 /*
 Într-un text cu cel mult 102 caractere cuvintele sunt formate din litere mici ale alfabetului englez și sunt
 separate prin câte un spațiu. Scrieți un program C/C++ care citește de la tastatură un text de tipul

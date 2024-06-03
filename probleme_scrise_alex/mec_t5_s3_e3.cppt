@@ -1,0 +1,78 @@
+/*
+Fişierul bac.txt conţine, în ordine descrescătoare, cel puţin două şi cel mult 106 numere naturale
+din intervalul [0,10^9], separate prin câte un spaţiu. Se cere să se afişeze pe ecran, în ordine strict
+descrescătoare, separate prin câte un spaţiu, numai numerele care apar în fişier de exact două ori.
+Dacă nu există niciun astfel de număr, se afișează pe ecran mesajul nu exista. Proiectați un algoritm
+eficient din punctul de vedere al memoriei utilizate şi al timpului de executare.
+Exemplu: dacă fişierul conţine numerele 100 50 50 50 49 49 36 16 16 12 10 10 9 7 7
+pe ecran se afişează, în această ordine, numerele 49 16 10 7
+*/
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+// VARIANTA 1
+// int main()
+// {
+//   int nr1,nr2,nr3,nr,var;
+//   ifstream fin("bac.txt");
+//   fin>>nr1;
+//   fin>>nr2;
+//   if(fin>>nr3){
+//     int exista=0;
+//     while(fin>>nr){
+//       exista=1;
+//       if(nr1!=nr2 && nr2==nr3 && nr3!=nr){
+//         cout<<nr2<<" ";
+//       }
+//       nr1=nr2;
+//       nr2=nr3;
+//       nr3=nr;
+//     }
+//
+//     if(!exista){
+//       if(nr1==nr2 && nr2!=nr3){
+//         cout<<nr1;
+//       }
+//       if(nr2==nr3 && nr1!=nr2){
+//         cout<<nr2;
+//       }
+//     }
+//     else{
+//       if(nr2==nr3 && nr1!=nr2){
+//         cout<<nr2;
+//       }
+//     }
+//   }
+//   else{
+//     if(nr1==nr2){
+//       cout<<nr1;
+//     }
+//   }
+//   return 0;
+// }
+
+// VARIANTA 2
+int main(){
+
+  int nr1,nr2,nr3,nr,var;
+  ifstream fin("bac.txt");
+  fin>>nr1;
+  fin>>nr2;
+  while(fin>>nr){
+    cout<<var<<endl;
+
+    if(nr1==nr2 && nr2!=nr && nr1!=var)
+      cout<<nr1<<" ";
+    var=nr1;
+    nr1=nr2;
+    nr2=nr;
+  }
+  if(nr1!=var &&nr1==nr2)
+
+    cout<<nr1;
+
+  return 0;
+}
